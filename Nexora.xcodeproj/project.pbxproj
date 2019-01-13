@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0424AF7921EB8F6400AB5398 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AF7821EB8F6400AB5398 /* UIImage+Extensions.swift */; };
+		0424AF7B21EB8FDA00AB5398 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AF7A21EB8FDA00AB5398 /* UIColor+Extensions.swift */; };
+		0424AF7D21EBA2ED00AB5398 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AF7C21EBA2ED00AB5398 /* UIImageView+Extensions.swift */; };
+		043D66FB21EB81FB00F1F61D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D66FA21EB81FB00F1F61D /* AppDelegate.swift */; };
+		043D670021EB81FB00F1F61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D66FE21EB81FB00F1F61D /* Main.storyboard */; };
+		043D670221EB81FD00F1F61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D670121EB81FD00F1F61D /* Assets.xcassets */; };
+		043D670521EB81FD00F1F61D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D670321EB81FD00F1F61D /* LaunchScreen.storyboard */; };
+		043D671121EB82A300F1F61D /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D671021EB82A300F1F61D /* PhotosViewController.swift */; };
+		043D671321EB82B000F1F61D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D671221EB82B000F1F61D /* Photo.swift */; };
+		043D671521EB82BE00F1F61D /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D671421EB82BE00F1F61D /* PhotosView.swift */; };
+		043D671721EB83F800F1F61D /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D671621EB83F800F1F61D /* PhotoCollectionViewCell.swift */; };
+		043D671921EB89FE00F1F61D /* PhotosViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D671821EB89FE00F1F61D /* PhotosViewController+UITableViewDataSource.swift */; };
+		043D671C21EB8ACF00F1F61D /* Results+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D671B21EB8ACF00F1F61D /* Results+Extensions.swift */; };
+		043D671F21EB8B0A00F1F61D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D671E21EB8B0A00F1F61D /* NetworkManager.swift */; };
+		043D672121EB8B1700F1F61D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D672021EB8B1700F1F61D /* Api.swift */; };
+		043D672421EB8B3400F1F61D /* Photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 043D672321EB8B3400F1F61D /* Photos.json */; };
+		043D672621EB8CC600F1F61D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 043D672521EB8CC600F1F61D /* Podfile */; };
+		56D4B80AC6FF79AD7F65DCE6 /* Pods_Nexora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D039BA98046AA25B87F0AF /* Pods_Nexora.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0424AF7821EB8F6400AB5398 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		0424AF7A21EB8FDA00AB5398 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		0424AF7C21EBA2ED00AB5398 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		043D66F721EB81FB00F1F61D /* Nexora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nexora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		043D66FA21EB81FB00F1F61D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		043D66FF21EB81FB00F1F61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		043D670121EB81FD00F1F61D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		043D670421EB81FD00F1F61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043D670621EB81FD00F1F61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043D671021EB82A300F1F61D /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		043D671221EB82B000F1F61D /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		043D671421EB82BE00F1F61D /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		043D671621EB83F800F1F61D /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		043D671821EB89FE00F1F61D /* PhotosViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotosViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		043D671B21EB8ACF00F1F61D /* Results+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Results+Extensions.swift"; sourceTree = "<group>"; };
+		043D671E21EB8B0A00F1F61D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		043D672021EB8B1700F1F61D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		043D672321EB8B3400F1F61D /* Photos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Photos.json; sourceTree = "<group>"; };
+		043D672521EB8CC600F1F61D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		52FF546D9DC15221A3A6CB0E /* Pods-Nexora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexora.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nexora/Pods-Nexora.release.xcconfig"; sourceTree = "<group>"; };
+		671446CA52AB1FABD581F8F3 /* Pods-Nexora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nexora.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nexora/Pods-Nexora.debug.xcconfig"; sourceTree = "<group>"; };
+		C4D039BA98046AA25B87F0AF /* Pods_Nexora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nexora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		043D66F421EB81FB00F1F61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D4B80AC6FF79AD7F65DCE6 /* Pods_Nexora.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043D66EE21EB81FB00F1F61D = {
+			isa = PBXGroup;
+			children = (
+				043D672521EB8CC600F1F61D /* Podfile */,
+				043D66F921EB81FB00F1F61D /* Nexora */,
+				043D66F821EB81FB00F1F61D /* Products */,
+				0CB6B5E492EF44A239E1FE82 /* Pods */,
+				553CDB09E1CD7A66C80CED52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		043D66F821EB81FB00F1F61D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				043D66F721EB81FB00F1F61D /* Nexora.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		043D66F921EB81FB00F1F61D /* Nexora */ = {
+			isa = PBXGroup;
+			children = (
+				043D670C21EB822400F1F61D /* Resources */,
+				043D671A21EB8A9300F1F61D /* Extensions */,
+				043D671D21EB8AF200F1F61D /* NetworkManager */,
+				043D670F21EB824200F1F61D /* Model */,
+				043D670D21EB822D00F1F61D /* View */,
+				043D670E21EB823C00F1F61D /* Controller */,
+				043D670621EB81FD00F1F61D /* Info.plist */,
+				043D66FA21EB81FB00F1F61D /* AppDelegate.swift */,
+			);
+			path = Nexora;
+			sourceTree = "<group>";
+		};
+		043D670C21EB822400F1F61D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				043D66FE21EB81FB00F1F61D /* Main.storyboard */,
+				043D670121EB81FD00F1F61D /* Assets.xcassets */,
+				043D670321EB81FD00F1F61D /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		043D670D21EB822D00F1F61D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043D671421EB82BE00F1F61D /* PhotosView.swift */,
+				043D671621EB83F800F1F61D /* PhotoCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		043D670E21EB823C00F1F61D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				043D671021EB82A300F1F61D /* PhotosViewController.swift */,
+				043D671821EB89FE00F1F61D /* PhotosViewController+UITableViewDataSource.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		043D670F21EB824200F1F61D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				043D671221EB82B000F1F61D /* Photo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		043D671A21EB8A9300F1F61D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				043D671B21EB8ACF00F1F61D /* Results+Extensions.swift */,
+				0424AF7821EB8F6400AB5398 /* UIImage+Extensions.swift */,
+				0424AF7A21EB8FDA00AB5398 /* UIColor+Extensions.swift */,
+				0424AF7C21EBA2ED00AB5398 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		043D671D21EB8AF200F1F61D /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				043D672221EB8B1E00F1F61D /* StubbedResponses */,
+				043D671E21EB8B0A00F1F61D /* NetworkManager.swift */,
+				043D672021EB8B1700F1F61D /* Api.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		043D672221EB8B1E00F1F61D /* StubbedResponses */ = {
+			isa = PBXGroup;
+			children = (
+				043D672321EB8B3400F1F61D /* Photos.json */,
+			);
+			path = StubbedResponses;
+			sourceTree = "<group>";
+		};
+		0CB6B5E492EF44A239E1FE82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				671446CA52AB1FABD581F8F3 /* Pods-Nexora.debug.xcconfig */,
+				52FF546D9DC15221A3A6CB0E /* Pods-Nexora.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		553CDB09E1CD7A66C80CED52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4D039BA98046AA25B87F0AF /* Pods_Nexora.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		043D66F621EB81FB00F1F61D /* Nexora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 043D670921EB81FD00F1F61D /* Build configuration list for PBXNativeTarget "Nexora" */;
+			buildPhases = (
+				AC1F1920EA1E294E2155C13C /* [CP] Check Pods Manifest.lock */,
+				043D66F321EB81FB00F1F61D /* Sources */,
+				043D66F421EB81FB00F1F61D /* Frameworks */,
+				043D66F521EB81FB00F1F61D /* Resources */,
+				91751E8F80AF375CC447BCDE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nexora;
+			productName = Nexora;
+			productReference = 043D66F721EB81FB00F1F61D /* Nexora.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		043D66EF21EB81FB00F1F61D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = aatalyk;
+				TargetAttributes = {
+					043D66F621EB81FB00F1F61D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 043D66F221EB81FB00F1F61D /* Build configuration list for PBXProject "Nexora" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 043D66EE21EB81FB00F1F61D;
+			productRefGroup = 043D66F821EB81FB00F1F61D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				043D66F621EB81FB00F1F61D /* Nexora */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		043D66F521EB81FB00F1F61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043D672621EB8CC600F1F61D /* Podfile in Resources */,
+				043D672421EB8B3400F1F61D /* Photos.json in Resources */,
+				043D670521EB81FD00F1F61D /* LaunchScreen.storyboard in Resources */,
+				043D670221EB81FD00F1F61D /* Assets.xcassets in Resources */,
+				043D670021EB81FB00F1F61D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91751E8F80AF375CC447BCDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Nexora/Pods-Nexora-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Nexora/Pods-Nexora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1F1920EA1E294E2155C13C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nexora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		043D66F321EB81FB00F1F61D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043D671921EB89FE00F1F61D /* PhotosViewController+UITableViewDataSource.swift in Sources */,
+				043D671C21EB8ACF00F1F61D /* Results+Extensions.swift in Sources */,
+				043D671321EB82B000F1F61D /* Photo.swift in Sources */,
+				043D671721EB83F800F1F61D /* PhotoCollectionViewCell.swift in Sources */,
+				043D671F21EB8B0A00F1F61D /* NetworkManager.swift in Sources */,
+				043D66FB21EB81FB00F1F61D /* AppDelegate.swift in Sources */,
+				0424AF7D21EBA2ED00AB5398 /* UIImageView+Extensions.swift in Sources */,
+				043D672121EB8B1700F1F61D /* Api.swift in Sources */,
+				0424AF7921EB8F6400AB5398 /* UIImage+Extensions.swift in Sources */,
+				0424AF7B21EB8FDA00AB5398 /* UIColor+Extensions.swift in Sources */,
+				043D671121EB82A300F1F61D /* PhotosViewController.swift in Sources */,
+				043D671521EB82BE00F1F61D /* PhotosView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		043D66FE21EB81FB00F1F61D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043D66FF21EB81FB00F1F61D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		043D670321EB81FD00F1F61D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043D670421EB81FD00F1F61D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		043D670721EB81FD00F1F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		043D670821EB81FD00F1F61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		043D670A21EB81FD00F1F61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 671446CA52AB1FABD581F8F3 /* Pods-Nexora.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQGZ5MNAN6;
+				INFOPLIST_FILE = Nexora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-aatalyk.Nexora";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		043D670B21EB81FD00F1F61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52FF546D9DC15221A3A6CB0E /* Pods-Nexora.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SQGZ5MNAN6;
+				INFOPLIST_FILE = Nexora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-aatalyk.Nexora";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		043D66F221EB81FB00F1F61D /* Build configuration list for PBXProject "Nexora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043D670721EB81FD00F1F61D /* Debug */,
+				043D670821EB81FD00F1F61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		043D670921EB81FD00F1F61D /* Build configuration list for PBXNativeTarget "Nexora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				043D670A21EB81FD00F1F61D /* Debug */,
+				043D670B21EB81FD00F1F61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 043D66EF21EB81FB00F1F61D /* Project object */;
+}
