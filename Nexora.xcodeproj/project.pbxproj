@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0424AF7921EB8F6400AB5398 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AF7821EB8F6400AB5398 /* UIImage+Extensions.swift */; };
 		0424AF7B21EB8FDA00AB5398 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AF7A21EB8FDA00AB5398 /* UIColor+Extensions.swift */; };
-		0424AF7D21EBA2ED00AB5398 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0424AF7C21EBA2ED00AB5398 /* UIImageView+Extensions.swift */; };
 		043D66FB21EB81FB00F1F61D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D66FA21EB81FB00F1F61D /* AppDelegate.swift */; };
 		043D670021EB81FB00F1F61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043D66FE21EB81FB00F1F61D /* Main.storyboard */; };
 		043D670221EB81FD00F1F61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043D670121EB81FD00F1F61D /* Assets.xcassets */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		0424AF7821EB8F6400AB5398 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		0424AF7A21EB8FDA00AB5398 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
-		0424AF7C21EBA2ED00AB5398 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		043D66F721EB81FB00F1F61D /* Nexora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nexora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043D66FA21EB81FB00F1F61D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043D66FF21EB81FB00F1F61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				043D671B21EB8ACF00F1F61D /* Results+Extensions.swift */,
 				0424AF7821EB8F6400AB5398 /* UIImage+Extensions.swift */,
 				0424AF7A21EB8FDA00AB5398 /* UIColor+Extensions.swift */,
-				0424AF7C21EBA2ED00AB5398 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -320,7 +317,6 @@
 				043D671721EB83F800F1F61D /* PhotoCollectionViewCell.swift in Sources */,
 				043D671F21EB8B0A00F1F61D /* NetworkManager.swift in Sources */,
 				043D66FB21EB81FB00F1F61D /* AppDelegate.swift in Sources */,
-				0424AF7D21EBA2ED00AB5398 /* UIImageView+Extensions.swift in Sources */,
 				043D672121EB8B1700F1F61D /* Api.swift in Sources */,
 				0424AF7921EB8F6400AB5398 /* UIImage+Extensions.swift in Sources */,
 				0424AF7B21EB8FDA00AB5398 /* UIColor+Extensions.swift in Sources */,

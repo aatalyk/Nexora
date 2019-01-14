@@ -27,10 +27,6 @@ class PhotosViewController: UIViewController {
         self.networkProvider = networkProvider
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -71,5 +67,9 @@ class PhotosViewController: UIViewController {
                 weakSelf.photosView.activityIndicatorView.stopAnimating()
             }
         }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
